@@ -52,12 +52,6 @@ public class TFLiteHelper {
     }
 
     void init() {
-        try {
-            Interpreter.Options opt = new Interpreter.Options();
-            tflite = new Interpreter(loadmodelfile(context), opt);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
     }
 
     private TensorImage loadImage(final Bitmap bitmap) {
